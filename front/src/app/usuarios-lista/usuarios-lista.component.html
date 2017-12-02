@@ -1,0 +1,19 @@
+<h2>{{titulo}}</h2>
+
+<table class="table table-striped">
+  <tr>
+    <th>Nome: </th>
+    <th>Email: </th>
+    <th>Excluir</th>
+  </tr>
+  <tr style="font-family: Calibri" *ngFor="let usuarios of usuarios">
+    <td>{{usuarios.name}}</td>
+    <td>{{usuarios.email}}</td>
+    <td>
+      
+      <button class="btn btn-default btn-danger" (click)="excluir(usuarios._id)">
+        <span>X</span>
+      </button>  
+    </td>
+  </tr>
+</table>

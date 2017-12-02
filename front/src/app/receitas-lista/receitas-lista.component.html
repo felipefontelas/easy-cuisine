@@ -1,0 +1,27 @@
+<h2>{{titulo}}</h2>
+<div>
+  <a href='/receitas/novo' class="btn btn-primary btn-md">Nova Receita</a>
+  <a href='/usuarios/novo' class="btn btn-primary btn-md">Se registrar</a>
+  <a href='/receitas/novo' class="btn btn-primary btn-md">Novo Post</a>
+</div>
+<table class="table table-striped">
+  <tr>
+    <th>Nome: </th>
+    <th>Dificuldade: </th>
+    <th>Sabor: </th>
+    <th>Ingredientes: </th>
+    <th>Modo de preparo</th>
+  </tr>
+  <tr style="font-family: Calibri" *ngFor="let receitas of receitas">
+    <td>{{receitas.name}}</td>
+    <td>{{receitas.difficulty}}</td>
+    <td>{{receitas.taste}}</td>
+    <td>{{receitas.ingredients}}</td>
+    <td>{{receitas.prepare}}</td>
+    <td>
+      <button class="btn btn-default btn-danger" (click)="excluir(receitas._id)">
+        <span>X</span>
+      </button>  
+    </td>
+  </tr>
+</table>

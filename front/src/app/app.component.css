@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+.header{
+    display: flex;
+    padding-left: 415px;
+}
+.header__title{
+    padding-bottom: 10px;
+    padding-left: 25px;
+    font-family: Lobster;
+    font-size: 50px;
+    color: black;
+}
+.header__options{
+    padding: 10px;
+    text-align: center;
+}
+
+.header__img{
+    width: 75px;
+    height: 75px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.header__exp{
+    text-align: center;
+}

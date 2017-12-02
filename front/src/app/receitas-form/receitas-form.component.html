@@ -1,0 +1,47 @@
+<form #receitasForm="ngForm" (ngSubmit)="enviar()">
+
+
+
+  <div class="form-group">
+    <label for="name">Nome</label>
+    <input type="text" id="name" name="name" class="form-control" [(ngModel)]="model.name">
+  </div>
+
+  <div class="form-group">
+    <label for="difficulty">Dificuldade</label>
+    <select id="difficulty" class="form-control" name="difficulty" [(ngModel)]="model.difficulty">
+        <option value="">(Selecione)</option>
+        <option value="Fácil">Fácil</option>
+        <option value="Médio">Médio</option>
+        <option value="Difícil">Difícil</option>
+        <option value="Profissional">Profissional</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="taste">Sabor</label>
+    <select id="taste" class="form-control" name="taste" [(ngModel)]="model.taste">
+        <option value="">(Selecione)</option>
+        <option value="Salgado">Salgado</option>
+        <option value="Doce">Doce</option>
+        <option value="Agridoce">Agridoce</option>
+        <option value="Amargo">Amargo</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="ingredients">Ingredientes</label>
+    <textarea id="ingredients" class="form-control" name="ingredients" [(ngModel)]="model.ingredients"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="prepare">Modo de Preparo</label>
+    <textarea id="prepare" class="form-control" name="prepare" [(ngModel)]="model.prepare"></textarea>
+  </div>
+
+  <div class="text-center">
+    <input type="submit" class="btn btn-primary" value="Enviar">
+  </div>
+  
+
+</form>
